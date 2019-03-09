@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+            "left-col right-col";
+}
+.left-col {
+    display: grid;
+    background-color: aquamarine;
+    align-content: center;
+}
+.right-col {
+    display: grid;
+    background-color: antiquewhite;
+    align-content: center;
+}
+
+.iphone
+{
+    width:100%;
+    justify-self: center;
+}
+
