@@ -1,20 +1,58 @@
-.container {
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 61px;
+    left: 0px;
+    top: 0px;
+    background-color: #cccccc;
+    margin: 0 auto;
+}
+
+.logo
+{
+    width: 70px;
+    height: 47px;
+    float: left;
+}
+
+nav
+{
+    float: right;
+}
+
+nav li
+{
+   display: inline-block;
+    margin-left: 73px;
+    padding-top: 22px;
+}
+.home {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100vh;
+    grid-template-rows: 657px;
     grid-template-areas:
             "left-col right-col";
+    margin-top: 61px;
 }
+.first-section {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: calc(100vh - 61px);
+    background-color: aqua;
+}
+
 .left-col {
     display: grid;
     background-color: aquamarine;
     align-content: center;
+
 }
 .right-col {
     display: grid;
     background-color: antiquewhite;
     align-content: center;
 }
+
 
 .iphone
 {
@@ -32,3 +70,5 @@
     top:30px;
     left:30px;
 }
+
+
