@@ -13,11 +13,14 @@
     width: 70px;
     height: 47px;
     float: left;
+    padding-top: 10px;
+    padding-left: 10%;
 }
 
 nav
 {
     float: right;
+    padding-right: 10%;
 }
 
 nav li
@@ -25,7 +28,36 @@ nav li
    display: inline-block;
     margin-left: 73px;
     padding-top: 22px;
+
+    position: relative;
 }
+
+nav a {
+    color: floralwhite;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 18px;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #222222;
+
+    position: absolute;
+
+    top: 0;
+    width: 0;
+    transition: all-ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+
+}
+
+
 .home {
     display: grid;
     grid-template-columns: 50% 50%;
