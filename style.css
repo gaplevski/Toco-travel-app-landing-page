@@ -1,35 +1,58 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+p {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fixed-padding {
+    padding-left: 135px;
+    padding-right: 135px;
+}
+
 .navbar {
     position: fixed;
     width: 100%;
     height: 61px;
     left: 0px;
     top: 0px;
-    background-color: #cccccc;
+    background-color: #8C64E0;
     margin: 0 auto;
+    padding-left: 135px;
+    padding-right: 135px;
 }
 
-.logo
-{
+.logo {
     width: 70px;
     height: 47px;
     float: left;
     padding-top: 10px;
-    padding-left: 10%;
 }
 
-nav
-{
-    float: right;
-    padding-right: 10%;
+nav {
+    float: left;
 }
 
-nav li
-{
-   display: inline-block;
-    margin-left: 73px;
-    padding-top: 22px;
+nav li {
+    display: inline-block;
+    margin-left: 67px;
+    padding-top: 18px;
 
     position: relative;
+
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+
+    color: #FFFFFF;
 }
 
 nav a {
@@ -58,19 +81,28 @@ nav a:hover::before {
 }
 
 
-.home {
+.split-view {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 657px;
-    grid-template-areas:
-            "left-col right-col";
+    grid-template-areas: "left-col right-col";
+}
+
+.home{
+    height: 657px;
     margin-top: 61px;
 }
+
+.review{
+    height: 1077px;
+}
+
 .first-section {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: calc(100vh - 61px);
+    grid-template-columns: 33% 33% 33%;
+    height: 718px;
     background-color: aqua;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 124px;
 }
 
 .left-col {
@@ -79,6 +111,7 @@ nav a:hover::before {
     align-content: center;
 
 }
+
 .right-col {
     display: grid;
     background-color: antiquewhite;
@@ -86,21 +119,69 @@ nav a:hover::before {
 }
 
 
-.iphone
-{
-    width:100%;
+.iphone {
+    width: 100%;
     justify-self: center;
 }
 
-.text
-{
+.text-centered {
     justify-self: center;
 }
 
-.hamburger{
-    position:absolute;
-    top:30px;
-    left:30px;
+.hamburger {
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
 
 
+.first-inner {
+    width: 370px;
+    background-color: #8C64E0;
+}
+
+.first-inner article {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+
+.call-to-action{
+    height: 359px;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 50px;
+}
+
+
+.button {
+    background-color: crimson;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 30px;
+    width: 260px;
+}
+
+.button-container{
+    text-align: center;
+}
+
+.social-media {
+    height: 180px;
+    background-color: darkturquoise;
+    text-align: center;
+    padding: 50px;
+}
+
+.social-media a {
+    margin: 20px;
+}
