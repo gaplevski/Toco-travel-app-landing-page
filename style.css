@@ -66,11 +66,11 @@ nav a::before {
     content: '';
     display: block;
     height: 5px;
-    background-color: #222222;
+    background-color: #EC9498;
 
     position: absolute;
 
-    top: 0;
+    top: 10px;
     width: 0;
     transition: all-ease-in-out 250ms;
 }
@@ -99,7 +99,7 @@ nav a:hover::before {
 .first-section {
     grid-template-columns: 33% 33% 33%;
     height: 718px;
-    background-color: aqua;
+    background-color: #FEE2AB;
     justify-content: space-between;
     display: flex;
     padding-top: 124px;
@@ -107,20 +107,31 @@ nav a:hover::before {
 
 .left-col {
     display: grid;
-    background-color: aquamarine;
     align-content: center;
+}
 
+.hero-image {
+    background-image: url("paper.png");
+    background-position: center;
+    background-size:120%;
 }
 
 .right-col {
     display: grid;
-    background-color: antiquewhite;
+    background-color: #EC9498;
     align-content: center;
 }
 
 
 .iphone {
     width: 100%;
+    height: auto;
+    justify-self: center;
+}
+
+.iphone-big {
+    width: 100%;
+    height: auto;
     justify-self: center;
 }
 
@@ -128,16 +139,8 @@ nav a:hover::before {
     justify-self: center;
 }
 
-.hamburger {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-}
-
-
 .first-inner {
     width: 370px;
-    background-color: #8C64E0;
 }
 
 .first-inner article {
@@ -152,14 +155,14 @@ h2 {
 
 .call-to-action{
     height: 359px;
-    background-color: cornflowerblue;
+    background-color: #FEE2AB;
     text-align: center;
     padding: 50px;
 }
 
 
 .button {
-    background-color: crimson;
+    background-color: #F2346D;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -168,7 +171,11 @@ h2 {
     display: inline-block;
     font-size: 16px;
     margin-top: 30px;
-    width: 260px;
+    width: 90%;
+    height: 400%;
+    border-radius: 7px;
+    left: 873px;
+    top: 516px;
 }
 
 .button-container{
@@ -177,7 +184,7 @@ h2 {
 
 .social-media {
     height: 180px;
-    background-color: darkturquoise;
+    background-color: #CCBBF1;
     text-align: center;
     padding: 50px;
 }
