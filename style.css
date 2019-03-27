@@ -42,6 +42,7 @@ nav li {
     display: inline-block;
     margin-left: 67px;
     padding-top: 18px;
+    text-align: center;
 
     position: relative;
 
@@ -50,8 +51,6 @@ nav li {
     font-weight: 500;
     font-size: 20px;
     line-height: normal;
-    text-align: center;
-
     color: #FFFFFF;
 }
 
@@ -111,9 +110,9 @@ nav a:hover::before {
 }
 
 .hero-image {
-    background-image: url("paper.png");
+    background-image: url("tocoback.png");
     background-position: center;
-    background-size:120%;
+    background-size: cover;
 }
 
 .right-col {
@@ -124,14 +123,12 @@ nav a:hover::before {
 
 
 .iphone {
-    width: 100%;
-    height: auto;
+    width: 270px;
     justify-self: center;
 }
 
 .iphone-big {
-    width: 100%;
-    height: auto;
+    width: 426px;
     justify-self: center;
 }
 
@@ -171,8 +168,8 @@ h2 {
     display: inline-block;
     font-size: 16px;
     margin-top: 30px;
-    width: 90%;
-    height: 400%;
+    width: 349px;
+    height: 79px;
     border-radius: 7px;
     left: 873px;
     top: 516px;
@@ -189,6 +186,22 @@ h2 {
     padding: 50px;
 }
 
+.social-media img {
+    width: 84px;
+    height: 84px;
+}
+
 .social-media a {
-    margin: 20px;
+    margin: 62px;
+}
+
+
+.img-container {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
