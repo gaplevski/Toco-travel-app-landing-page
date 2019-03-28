@@ -76,7 +76,6 @@ nav a::before {
 
 nav a:hover::before {
     width: 100%;
-
 }
 
 
@@ -86,12 +85,12 @@ nav a:hover::before {
     grid-template-areas: "left-col right-col";
 }
 
-.home{
+.home {
     height: 657px;
     margin-top: 61px;
 }
 
-.review{
+.review {
     height: 1077px;
 }
 
@@ -113,6 +112,7 @@ nav a:hover::before {
     background-image: url("tocoback.png");
     background-position: center;
     background-size: cover;
+    z-index: -100;
 }
 
 .right-col {
@@ -123,8 +123,13 @@ nav a:hover::before {
 
 
 .iphone {
+    width: 357px;
     width: 270px;
-    justify-self: center;
+    height: 587px;
+    z-index: 100;
+    position: absolute;
+    top: 96px;
+    left: 254px;
 }
 
 .iphone-big {
@@ -150,7 +155,7 @@ h2 {
 
 }
 
-.call-to-action{
+.call-to-action {
     height: 359px;
     background-color: #FEE2AB;
     text-align: center;
@@ -175,8 +180,9 @@ h2 {
     top: 516px;
 }
 
-.button-container{
+.button-container {
     text-align: center;
+
 }
 
 .social-media {
@@ -189,6 +195,7 @@ h2 {
 .social-media img {
     width: 84px;
     height: 84px;
+    top: 2919px;
 }
 
 .social-media a {
@@ -199,9 +206,152 @@ h2 {
 .img-container {
     position: relative;
 }
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+
+.slider-frame {
+    overflow: hidden;
+    width: 270px;
+    height: 587px;
+    justify-self: center;
+    border-radius: 60px;
+}
+
+/*------------ SLIDE ANIMATION --------------*/
+@-webkit-keyframes slide_animation {
+    0% {
+        left: 0px;
+    }
+    10% {
+        left: 0px;
+    }
+    20% {
+        left: 270px;
+    }
+    30% {
+        left: 270px;
+    }
+    40% {
+        left: 270px;
+    }
+    50% {
+        left: 540px;
+    }
+    60% {
+        left: 540px;
+    }
+    70% {
+        left: 540px;
+    }
+    80% {
+        left: 810px;
+    }
+    90% {
+        left: 810px;
+    }
+    100% {
+        left: 810px;
+    }
+}
+
+.slider-images {
+    margin: 0 0 0 -810px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
 
 }
+
+.img-container {
+    width: 270px;
+    height: 800px;
+    position: relative;
+    float: left;
+}
+
+.img-container img {
+    width: 270px;
+    height: 587px;
+    border-radius: 60px;
+}
+
+/*------------ END OF ANIMATION PART --------------*/
+
+
+.slider-frame-big {
+    overflow: hidden;
+    width: 363px;
+    height: 789px;
+    justify-self: center;
+}
+
+/*------------ SLIDE ANIMATION --------------*/
+@-webkit-keyframes slide_animation_big {
+    0% {
+        left: 0px;
+    }
+    10% {
+        left: 0px;
+    }
+    20% {
+        left: 363px;
+    }
+    30% {
+        left: 363px;
+    }
+    40% {
+        left: 363px;
+    }
+    50% {
+        left: 726px;
+    }
+    60% {
+        left: 726px;
+    }
+    70% {
+        left: 726px;
+    }
+    80% {
+        left: 1089px;
+    }
+    90% {
+        left: 1089px;
+    }
+    100% {
+        left: 1089px;
+    }
+}
+
+.slider-images-big {
+    margin: 0 0 0 -1089px;
+    position: relative;
+    -webkit-animation-name: slide_animation_big;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+
+}
+
+.img-container-big {
+    width: 363px;
+    height: 789px;
+    position: relative;
+    float: left;
+}
+
+.img-container-big img {
+    width: 363px;
+    height: 789px;
+}
+
+/*------------ END OF ANIMATION PART --------------*/
+
