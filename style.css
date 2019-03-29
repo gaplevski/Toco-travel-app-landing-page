@@ -123,18 +123,21 @@ nav a:hover::before {
 
 
 .iphone {
-    width: 357px;
     width: 270px;
     height: 587px;
     z-index: 100;
     position: absolute;
     top: 96px;
-    left: 254px;
+    left: calc(25vw - 135px);
 }
 
 .iphone-big {
-    width: 426px;
-    justify-self: center;
+    width: 368px;
+    height: 791px;
+    z-index: 100;
+    position: absolute;
+    left: calc(25vw - 184px);
+
 }
 
 .text-centered {
@@ -263,7 +266,7 @@ h2 {
     margin: 0 0 0 -810px;
     position: relative;
     -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
@@ -280,7 +283,6 @@ h2 {
 .img-container img {
     width: 270px;
     height: 587px;
-    border-radius: 60px;
 }
 
 /*------------ END OF ANIMATION PART --------------*/
@@ -288,9 +290,9 @@ h2 {
 
 .slider-frame-big {
     overflow: hidden;
-    width: 363px;
     height: 789px;
     justify-self: center;
+    border-radius: 54px;
 }
 
 /*------------ SLIDE ANIMATION --------------*/
@@ -302,13 +304,13 @@ h2 {
         left: 0px;
     }
     20% {
-        left: 363px;
+        left: 364px;
     }
     30% {
-        left: 363px;
+        left: 364px;
     }
     40% {
-        left: 363px;
+        left: 364px;
     }
     50% {
         left: 726px;
@@ -334,7 +336,7 @@ h2 {
     margin: 0 0 0 -1089px;
     position: relative;
     -webkit-animation-name: slide_animation_big;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
@@ -342,14 +344,14 @@ h2 {
 }
 
 .img-container-big {
-    width: 363px;
+    width: 364px;
     height: 789px;
     position: relative;
     float: left;
 }
 
 .img-container-big img {
-    width: 363px;
+    width: 364px;
     height: 789px;
 }
 
