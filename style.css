@@ -57,7 +57,6 @@ nav li {
 nav a {
     color: floralwhite;
     text-decoration: none;
-    text-transform: lowercase;
     font-size: 18px;
 }
 
@@ -78,13 +77,6 @@ nav a:hover::before {
     width: 100%;
 }
 
-
-.split-view {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "left-col right-col";
-}
-
 .home {
     height: 657px;
     margin-top: 61px;
@@ -94,31 +86,57 @@ nav a:hover::before {
     height: 1077px;
 }
 
-.first-section {
-    grid-template-columns: 33% 33% 33%;
-    height: 718px;
-    background-color: #FEE2AB;
-    justify-content: space-between;
+
+
+
+
+
+
+
+
+.split-view {
     display: flex;
+    flex-direction: column;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEE2AB;
+    align-items: center;
     padding-top: 124px;
 }
 
 .left-col {
-    display: grid;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+
 }
+
+.right-col {
+    display: flex;
+    flex-direction: column;
+    background-color: #EC9498;
+    align-content: center;
+    min-height: 50vh;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .hero-image {
     background-image: url("tocoback.png");
     background-position: center;
     background-size: cover;
-    z-index: -100;
-}
-
-.right-col {
-    display: grid;
-    background-color: #EC9498;
-    align-content: center;
+    align-items: center;
 }
 
 
@@ -127,8 +145,7 @@ nav a:hover::before {
     height: 587px;
     z-index: 100;
     position: absolute;
-    top: 96px;
-    left: calc(25vw - 135px);
+    left: calc(50vw - 135px);
 }
 
 .iphone-big {
@@ -174,17 +191,19 @@ h2 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin-top: 30px;
-    width: 349px;
-    height: 79px;
+    margin-top: 70px;
+    width: 414px;
     border-radius: 7px;
     left: 873px;
     top: 516px;
+    font-size: 48px;
+    line-height: normal;
+    font-style: normal;
 }
 
 .button-container {
     text-align: center;
+
 
 }
 
@@ -357,3 +376,49 @@ h2 {
 
 /*------------ END OF ANIMATION PART --------------*/
 
+
+
+
+
+
+
+
+
+@media (min-width: 1420px) {
+
+    .first-section {
+        grid-template-columns: 33% 33% 33%;
+        height: 718px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: unset;
+    }
+
+    .split-view {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "left-col right-col";
+    }
+
+
+    .left-col {
+        display: grid;
+        align-content: center;
+    }
+
+    .right-col {
+        display: grid;
+    }
+
+    .hero-image {
+        align-items: unset;
+        z-index: -100;
+    }
+
+
+    .iphone {
+        top: 96px;
+        left: calc(25vw - 135px);
+    }
+
+}
