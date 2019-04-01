@@ -1,0 +1,152 @@
+.slider-frame {
+    overflow: hidden;
+    width: 270px;
+    height: 587px;
+    justify-self: center;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*------------ SLIDE ANIMATION --------------*/
+@-webkit-keyframes slide_animation {
+    0% {
+        left: 0px;
+    }
+    10% {
+        left: 0px;
+    }
+    20% {
+        left: 270px;
+    }
+    30% {
+        left: 270px;
+    }
+    40% {
+        left: 270px;
+    }
+    50% {
+        left: 540px;
+    }
+    60% {
+        left: 540px;
+    }
+    70% {
+        left: 540px;
+    }
+    80% {
+        left: 810px;
+    }
+    90% {
+        left: 810px;
+    }
+    100% {
+        left: 810px;
+    }
+}
+
+.slider-images {
+    margin: 0 0 0 -810px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container {
+    width: 270px;
+    height: 800px;
+    position: relative;
+    float: left;
+}
+
+.img-container img {
+    width: 270px;
+    height: 587px;
+}
+
+/*------------ END OF ANIMATION PART --------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-frame-big {
+    overflow: hidden;
+    height: 789px;
+    justify-self: center;
+    border-radius: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 368px;
+}
+
+/*------------ SLIDE ANIMATION --------------*/
+@-webkit-keyframes slide_animation_big {
+    0% {
+        left: 0px;
+    }
+    10% {
+        left: 0px;
+    }
+    20% {
+        left: 364px;
+    }
+    30% {
+        left: 364px;
+    }
+    40% {
+        left: 364px;
+    }
+    50% {
+        left: 726px;
+    }
+    60% {
+        left: 726px;
+    }
+    70% {
+        left: 726px;
+    }
+    80% {
+        left: 1089px;
+    }
+    90% {
+        left: 1089px;
+    }
+    100% {
+        left: 1089px;
+    }
+}
+
+.slider-images-big {
+    margin: 0 0 0 -1089px;
+    position: relative;
+    -webkit-animation-name: slide_animation_big;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container-big {
+    width: 364px;
+    height: 789px;
+    position: relative;
+    float: left;
+}
+
+.img-container-big img {
+    width: 364px;
+    height: 789px;
+}
+
+/*------------ END OF ANIMATION PART --------------*/

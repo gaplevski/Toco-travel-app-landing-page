@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="reset.css" rel="stylesheet">
-    <link href="hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="slider-animation.css">
     <link href="style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="media-queries.css">
 
 </head>
 
-
-<body>
+<body class="split-view">
 
 
 <header>
@@ -26,7 +27,7 @@
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Price</a></li>
-                <li><a href="#">Review</a></li>
+                <li><a href="#">third-section</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
 
@@ -36,44 +37,39 @@
 </header>
 
 
-<div class="split-view home">
-    <section class="left-col hero-image fixed-padding">
-        <div style="justify-self: center">
-        <img src="iphonebig.png" class="iphone">
-        </div>
+<section class="left-col home hero-image fixed-padding">
 
-        <div class="slider-frame">
-            <div class="slider-images">
-                <div class="img-container">
-                    <img src="2.1.png">
-                </div>
-                <div class="img-container">
-                    <img src="2.1.1.png">
-                </div>
-                <div class="img-container">
-                    <img src="homescreen.png">
-                </div>
-                <div class="img-container">
-                    <img src="3.png">
-                </div>
+    <img src="iphonebig.png" class="iphone">
+
+    <div class="slider-frame">
+        <div class="slider-images">
+            <div class="img-container">
+                <img src="2.1.png">
             </div>
-
+            <div class="img-container">
+                <img src="2.1.1.png">
+            </div>
+            <div class="img-container">
+                <img src="homescreen.png">
+            </div>
+            <div class="img-container">
+                <img src="3.png">
+            </div>
         </div>
+    </div>
+</section>
 
 
-    </section>
+<section class="right-col home fixed-padding">
+    <p class="text-centered">To some, a wind is a man for avoiding.It is a delighted moon, sir.</p>
+    <div class="button-container">
+        <a href="#" class="button">Link Button</a>
+    </div>
+</section>
 
-    <section class="right-col fixed-padding">
-        <p class="text-centered">To some, a wind is a man for avoiding.It is a delighted moon, sir.</p>
-        <div class="button-container">
-            <a href="#" class="button">Link Button</a>
-        </div>
-    </section>
 
-</div>
-
-<div class="first-section fixed-padding">
-    <section class="first-inner">
+<div class="second-section fixed-padding">
+    <section class="second-section-inner">
         <img src="https://via.placeholder.com/370x216.png">
         <article>
             <h2>Heading</h2>
@@ -83,7 +79,7 @@
     </section>
 
 
-    <section class="first-inner">
+    <section class="second-section-inner">
         <img src="https://via.placeholder.com/370x216.png">
         <article>
             <h2>Heading</h2>
@@ -93,7 +89,7 @@
     </section>
 
 
-    <section class="first-inner">
+    <section class="second-section-inner">
         <img src="https://via.placeholder.com/370x216.png">
         <article>
             <h2>Heading</h2>
@@ -104,64 +100,58 @@
 </div>
 
 
-<div class="split-view review">
-    <section class="left-col hero-image fixed-padding">
+<section class="left-col third-section hero-image fixed-padding">
 
-        <div style="justify-self: center">
-            <img src="iphonebig.png" class="iphone-big">
+    <img src="iphonebig.png" class="iphone-big">
+
+    <div class="slider-frame-big">
+        <div class="slider-images-big">
+            <div class="img-container-big">
+                <img src="2.1.1.png">
+            </div>
+            <div class="img-container-big">
+                <img src="2.1.1.png">
+            </div>
+            <div class="img-container-big">
+                <img src="2.1.1.png">
+            </div>
+            <div class="img-container-big">
+                <img src="2.1.1.png">
+            </div>
         </div>
+    </div>
 
-        <div class="slider-frame-big">
-            <div class="slider-images-big">
-                <div class="img-container-big">
-                    <img src="2.1.1.png">
-                </div>
-                <div class="img-container-big">
-                    <img src="2.1.1.png">
-                </div>
-                <div class="img-container-big">
-                    <img src="2.1.1.png">
-                </div>
-                <div class="img-container-big">
-                    <img src="2.1.1.png">
-                </div>
+
+</section>
+
+<section class="right-col third-section fixed-padding">
+
+    <div class="slider-frame-text">
+        <div class="slider-text">
+            <div class="text-container">
+                <p class="text-centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla velit,
+                    facilisis id nibh sed, pellentesque lobortis diam. Suspendisse scelerisque tincidunt mi.</p>
+            </div>
+            <div class="text-container">
+                <p class="text-centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla velit,
+                    facilisis id nibh sed, pellentesque lobortis diam. Suspendisse scelerisque tincidunt mi.</p>
+            </div>
+            <div class="text-container">
+                <p class="text-centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla velit,
+                    facilisis id nibh sed, pellentesque lobortis diam. Suspendisse scelerisque tincidunt mi.</p>
+            </div>
+            <div class="text-container">
+                <p class="text-centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla velit,
+                    facilisis id nibh sed, pellentesque lobortis diam. Suspendisse scelerisque tincidunt mi.</p>
             </div>
         </div>
 
+    </div>
 
-    </section>
-
-    <section class="right-col fixed-padding">
-
-        <div class="slider-frame-text">
-            <div class="slider-text">
-                <div class="text-container">
-                    <p class="text-centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla velit, facilisis id nibh sed, pellentesque lobortis diam. Suspendisse scelerisque tincidunt mi.</p>
-                </div>
-                <div class="text-container">
-                    <p class="text-centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla velit, facilisis id nibh sed, pellentesque lobortis diam. Suspendisse scelerisque tincidunt mi.</p>
-                </div>
-                <div class="text-container">
-                    <p class="text-centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla velit, facilisis id nibh sed, pellentesque lobortis diam. Suspendisse scelerisque tincidunt mi.</p>
-                </div>
-                <div class="text-container">
-                    <p class="text-centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla velit, facilisis id nibh sed, pellentesque lobortis diam. Suspendisse scelerisque tincidunt mi.</p>
-                </div>
-            </div>
-
-        </div>
+</section>
 
 
-
-
-
-
-    </section>
-
-</div>
-
-
-<div class="call-to-action fixed-padding">
+<section class="fourth-section fixed-padding">
     <h2>Enjoy 60 days free</h2>
     <h2>No credit card needed</h2>
     <div class="app-store-button">
@@ -170,10 +160,10 @@
         </a>
 
     </div>
-</div>
+</section>
 
 
-<div class="social-media fixed-padding">
+<footer class="social-media fixed-padding">
     <a href="#">
         <img src="instagram.png">
     </a>
@@ -186,7 +176,7 @@
         <img src="youtube.png">
     </a>
 
-</div>
+</footer>
 
 </body>
 

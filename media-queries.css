@@ -1,0 +1,25 @@
+@media (max-width: 1420px) {
+    .split-view {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-section {
+        display: flex;
+        flex-direction: column;
+        height: unset;
+        align-items: center;
+    }
+    .iphone {
+        left: calc(50vw - 135px);
+    }
+    .iphone-big {
+        left: calc(50vw - 184px);
+    }
+    .right-col.home {
+        margin-top: 0px;
+    }
+
+}
+
+
