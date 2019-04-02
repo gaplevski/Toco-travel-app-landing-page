@@ -65,9 +65,7 @@ nav a::before {
     display: block;
     height: 5px;
     background-color: #EC9498;
-
     position: absolute;
-
     top: 10px;
     width: 0;
     transition: all-ease-in-out 250ms;
@@ -185,7 +183,6 @@ h2 {
     text-decoration: none;
     display: inline-block;
     margin-top: 70px;
-    width: 414px;
     border-radius: 7px;
     left: 873px;
     top: 516px;
@@ -229,17 +226,31 @@ h2 {
     left: 0;
 }
 
+#menu-icon {
+    display: hidden;
+    width: 42px;
+
+}
+
+.hamburger{
+    position:absolute;
+    top: 3px;
+    right: 407px;
+    z-index: 1000;
+    display: none;
+}
+
 .arrow-down {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    z-index: -1;
 }
 
 .arrow-down::after {
     content: "";
     width: 40px;
     height: 40px;
-    position: absolute;
     margin: auto;
     top: 0;
     left: 0;

@@ -25,6 +25,52 @@
          padding-right: 0px;
     }
 
+    header {
+        position: absolute;
+    }
+    #menu-icon {
+        display: inline-block;
+    }
+    nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        background: #c5c5c5;
+        right: 10px;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+    }
+    nav:hover ul {
+        display: block;
+    }
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    nav li:hover {
+        background-color: rebeccapurple;
+    }
+    
+    nav ul{
+        float: right;
+        padding-top: 200px;
+    }
+
+    nav a {
+        font-size: 48px;
+    }
+
+    nav a::before{
+        content: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
 }
 
 
