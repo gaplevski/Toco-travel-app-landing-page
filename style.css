@@ -23,8 +23,9 @@ a {
     top: 0px;
     background-color: #8C64E0;
     margin: 0 auto;
-    padding-left: 135px;
-    padding-right: 135px;
+    padding-left: 55px;
+    padding-right: 311px;
+    z-index: 1;
 }
 
 .logo {
@@ -203,16 +204,16 @@ h2 {
     text-align: center;
     padding: 50px;
     grid-column: span 2;
+    display: grid;
+    grid-template-columns: 15% 15% 15%;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-media img {
     width: 84px;
     height: 84px;
     top: 2919px;
-}
-
-.social-media a {
-    margin: 62px;
 }
 
 
@@ -244,25 +245,36 @@ h2 {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    z-index: -1;
+}
+
+.nav-open{
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.text-centered{
+    padding: 20px;
 }
 
 .arrow-down::after {
     content: "";
     width: 40px;
     height: 40px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75vh;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    border-right: 6px solid #FFFFFF;
-    border-bottom: 6px solid #FFFFFF;
+    border-right: 5px solid #F2346D;
+    border-bottom: 5px solid #F2346D;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    -webkit-animation: 2s arrow infinite ease;
+    -webkit-animation: 1s arrow infinite ease;
     animation: 2s arrow infinite ease;
-    position: fixed;
+    position: absolute;
 }
 
 @-webkit-keyframes arrow {

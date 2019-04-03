@@ -31,18 +31,12 @@
     #menu-icon {
         display: inline-block;
     }
-    nav ul, nav:active ul {
-        display: none;
-        position: absolute;
-        background: #c5c5c5;
+    nav ul {
+        position: fixed;
+        background: #CCBBF1;
         right: 10px;
-        top: 0px;
+        top: -1000px;
         left: 0px;
-        width: 100vw;
-        height: 100vh;
-    }
-    nav:hover ul {
-        display: block;
     }
     nav li {
         text-align: center;
@@ -52,7 +46,7 @@
     }
 
     nav li:hover {
-        background-color: rebeccapurple;
+        background-color: #8C64E0;
     }
     
     nav ul{
@@ -73,6 +67,11 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .social-media {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
 
 
 
