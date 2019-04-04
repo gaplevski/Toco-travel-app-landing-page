@@ -1,9 +1,18 @@
 body {
-    font-family: Roboto, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 p {
     font-size: 30px;
+}
+
+p, h2 {
+    color: #303030;
+}
+
+h2, nav a {
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
 }
 
 a {
@@ -24,13 +33,13 @@ a {
     background-color: #8C64E0;
     margin: 0 auto;
     padding-left: 55px;
-    padding-right: 311px;
+    padding-right: 294px;
     z-index: 1;
 }
 
 .logo {
-    width: 70px;
-    height: 47px;
+    width: 66px;
+    height: auto;
     float: left;
     padding-top: 10px;
 }
@@ -94,15 +103,20 @@ nav a:hover::before {
 .second-section {
     grid-template-columns: 33% 33% 33%;
     height: 718px;
-    background-color: #FEE2AB;
+    background-color: #dadada;
     justify-content: space-between;
     display: flex;
     padding-top: 124px;
     grid-column: span 2;
 }
 
+.second-section img {
+    width: 370px;
+    height: auto;
+}
 
-header{
+
+header {
     grid-column: span 2;
 }
 
@@ -167,13 +181,23 @@ h2 {
 
 .fourth-section {
     height: 359px;
-    background-color: #FEE2AB;
+    background-color: #dadada;
     text-align: center;
     padding: 50px;
     grid-column: span 2;
+    display: grid;
 
 }
 
+.store-badge {
+    width: auto;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.home h2{
+    text-align: center;
+}
 
 .button {
     background-color: #F2346D;
@@ -183,13 +207,16 @@ h2 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin-top: 70px;
     border-radius: 7px;
     left: 873px;
     top: 516px;
     font-size: 48px;
     line-height: normal;
     font-style: normal;
+}
+
+.button:hover {
+    background-color: #d83770;
 }
 
 .button-container {
@@ -233,8 +260,8 @@ h2 {
 
 }
 
-.hamburger{
-    position:absolute;
+.hamburger {
+    position: absolute;
     top: 3px;
     right: 407px;
     z-index: 1000;
@@ -247,13 +274,13 @@ h2 {
     text-align: center;
 }
 
-.nav-open{
+.nav-open {
     top: 0;
     width: 100vw;
     height: 100vh;
 }
 
-.text-centered{
+.text-centered {
     padding: 20px;
 }
 
@@ -263,7 +290,7 @@ h2 {
     height: 40px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 75vh;
+    margin-top: 68vh;
     top: 0;
     left: 0;
     right: 0;

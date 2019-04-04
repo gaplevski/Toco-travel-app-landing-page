@@ -9,28 +9,34 @@
         flex-direction: column;
         height: unset;
         align-items: center;
+        padding-bottom: 124px;
     }
+
     .iphone {
         left: calc(50vw - 135px);
     }
+
     .iphone-big {
         left: calc(50vw - 184px);
     }
+
     .right-col.home {
         margin-top: 0px;
     }
 
     .fixed-padding {
-         padding-left: 0px;
-         padding-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     header {
         position: absolute;
     }
+
     #menu-icon {
         display: inline-block;
     }
+
     nav ul {
         position: fixed;
         background: #CCBBF1;
@@ -38,6 +44,7 @@
         top: -1000px;
         left: 0px;
     }
+
     nav li {
         text-align: center;
         width: 100%;
@@ -48,8 +55,8 @@
     nav li:hover {
         background-color: #8C64E0;
     }
-    
-    nav ul{
+
+    nav ul {
         float: right;
         padding-top: 200px;
     }
@@ -58,18 +65,27 @@
         font-size: 48px;
     }
 
-    nav a::before{
+    nav a::before {
         content: none;
     }
 
-    .hamburger{
+    .hamburger {
         display: block;
+    }
+
+    .arrow-down::after {
+        margin-top: 80vh;
     }
 }
 
 @media (max-width: 1024px) {
     .social-media {
         grid-template-columns: 33% 33% 33%;
+    }
+
+    .text-centered {
+        padding: 30px;
+        justify-self: center;
     }
 }
 
